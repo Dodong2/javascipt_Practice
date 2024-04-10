@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 10px;
+    }
+</style>
+<body>
+    <!---Multiplication--->
+    <input type="number" class="num1" placeholder="1st number">
+    <input type="number" class="num2" placeholder="2nd number">
+    <button type="button" class="btn1">result</button>
+    <p class="res"></p><br><br><br>
+
+    <!---Calculator--->
+    <form>
+        <!---Result--->
+        <input type="text" id="res" class="num" name="text">
+    <div><br>
+        <!---buttons and functions--->
+        <input type="button" value="0" onclick="text.value +='0'">
+        <input type="button" value="1" onclick="text.value +='1'">
+        <input type="button" value="2" onclick="text.value +='2'">
+        <input type="button" value="3" onclick="text.value +='3'">
+        <input type="button" value="4" onclick="text.value +='4'">
+        <input type="button" value="5" onclick="text.value +='5'">
+        <input type="button" value="6" onclick="text.value +='6'"><br>
+        <input type="button" value="7" onclick="text.value +='7'">
+        <input type="button" value="8" onclick="text.value +='8'">
+        <input type="button" value="9" onclick="text.value +='9'">
+        <input type="button" value="+" onclick="text.value +='+'">
+        <input type="button" value="-" onclick="text.value +='-'">
+        <input type="button" value="*" onclick="text.value +='*'"><br>
+        <input type="button" value="/" onclick="text.value +='/'">
+        <input type="button" value="%" onclick="text.value +='%'">
+        <input type="button" value="C" onclick="text.value +=''">
+        <input type="button" value="." onclick="text.value +='.'">
+        <input type="button" value="D" onclick="text.value = text.value.toString().slice(0, -1)">
+        <input type="button" value="=" onclick="text.value = eval(text.value)">
+    </div>
+</form>
+
+    
+</body>
+</html>
